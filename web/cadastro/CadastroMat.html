@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Materiais</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="materiais.jsp">
+            <!-- ID/CÓDIGO -->
+            Código:<br>
+            <input type="number" name="codigo" id="codigo"> <p>
+            <!-- NOME DO MATERIAL -->
+            Texto Desc.:<br>
+            <input type="text" name="nome" id="nome"> <p>
+            <!-- FABRICANTE DO MATERIAL -->
+            Fabricante:<br>
+            <input type="text" name="fabricante" id="fabricante"> <p> 
+            <!-- QUANTIDADE MÍNIMA EM ESTOQUE MATERIAL -->
+            Qtd. Minima: <br>
+            <input type="text" name="qtd" id="qtd"> <p>
+            <!-- PREÇO UNITÁRIO DO MATERIAL -->
+            Preço Unitário: <br>
+            <input type="number" name="preco" id=preco step="0.05"> <p>
+            
+            <!-- BOTÃO SALVAR -->
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">                       
+        </form> 
+        
+    </body>
+</html>

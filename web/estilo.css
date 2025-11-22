@@ -1,0 +1,93 @@
+/* 
+    Created on : 17 de nov. de 2025, 21:32:57
+    Author     : Claudinha
+*/
+*{
+                margin: 0 auto
+            }
+            header{
+                display: flex;
+                align-items: center;
+                padding: 10px 20px; 
+                background-color: #282836;
+                color: whitesmoke;
+                text-align: center;
+            }
+            /* garante que o botão NÃO cresça */
+            .btn-home {
+                font-size: 14px;
+                padding: 5px 8px;
+                background: #ddd;
+                border: 1px solid #aaa;
+                border-radius: 5px;
+                cursor: pointer;
+
+                flex-shrink: 0; /* impede o botão de aumentar */
+            }
+            /* título ocupa todo espaço disponível */
+            header h1 {
+                margin: 0;
+                margin-left: 15px;  /* espaço entre o botão e o título */
+                font-size: 24px;
+                flex-grow: 1;       /* faz o título crescer e ocupar o espaço */
+            }
+            nav{
+                width: 100%;
+                background-color: #adadb8;
+                padding: 10px;
+                display: flex;
+                align-items: center
+            }
+            nav a{
+                color: #1d1d29;
+                text-decoration: none;
+                
+            }
+            nav a:hover{
+                color: darkblue;
+            }
+            
+            .Menu-Secundario{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 180px;
+                height: 48%;
+                background: #1e1e1e;
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+            .Menu-Secundario a{
+                display: block;          /* transforma em bloco para controlar tamanho */
+                width: 180px;            /* largura fixa */
+                border: 1px solid #444;
+                padding: 12px 0;         /* padding vertical apenas, para não aumentar a largura */
+                color: white;
+                text-decoration: none;
+                margin: 5px;
+                text-align: center;      /* centraliza o texto */
+                border-radius: 6px;
+            }
+            .Menu-Secundario a:hover{
+                color: darkblue;
+            }
+            
+           
+            main{
+                width:100%;
+                height: 473px;
+                padding: 10px;
+                background-color: #f2f2f7;
+            }
+            footer{
+                width:100%;
+                padding: 10px;
+                background-color: #282836;
+                color: #e3e3e6;
+            }
+            iframe{
+                border:0px;
+                width: 100%;
+                height:473px;
+            }
